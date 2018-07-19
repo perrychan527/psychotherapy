@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Perry's Psychotherapy</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+    <title>Perry's Psychotherapy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
     <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-	<script src="basicjavascript.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="js/route.js"></script>
+    <base href="/">
 </head>
 
 <body ng-app="myApp">
-	
-	<p><a href="#/!">Main</a></p>
 
-	<a href="#!red">Red</a>
-	<a href="#!green">Green</a>
-	<a href="#!blue">Blue</a>
+    <a href="#/">Home</a>
+    <a href="#/main">Main</a>
+    <a href="#/menu">Menu</a>
+    <a href="#/about">About</a>
 
-	<div ng-view></div>
+
+    <div ng-view></div>
 
 
 
