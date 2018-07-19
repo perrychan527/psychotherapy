@@ -8,18 +8,25 @@
     <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="js/route.js"></script>
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body ng-app="myApp">
 
-    <a href="#!/">Home</a>
-    <a href="#!/main">Main</a>
-    <a href="#!/menu">Menu</a>
-    <a href="#!/about">About</a>
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#!/" class="w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="#!/main" class="w3-bar-item w3-button w3-padding-large">Main</a>
+            <a href="#!/menu" class="w3-bar-item w3-button w3-padding-large">Menu</a>
+            <a href="#!/about" class="w3-bar-item w3-button w3-padding-large">About</a>
+        </div>
+    </div>
 
+    <div ng-view style="margin-top:46px"></div>
 
-    <div ng-view></div>
 
 
 
