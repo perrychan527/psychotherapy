@@ -1,11 +1,9 @@
 angular.module('myApp', ['ngRoute'])
 .config(function($routeProvider, $locationProvider){
-
+    //$locationProvider.html5Mode(true);
+    //$locationProvider.hashPrefix('!');
 
     $routeProvider
-    .when('/', {
-      templateUrl: 'index.html'
-    })
     .when("/main", {
         templateUrl : "html/main.html"
     })
@@ -16,6 +14,5 @@ angular.module('myApp', ['ngRoute'])
         templateUrl : "html/about.html"
     })
 
-    $locationProvider.html5Mode(true);
-    $locationProvider.hashPrefix('!');
+
 });
