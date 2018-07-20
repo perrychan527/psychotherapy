@@ -20,7 +20,7 @@ app.config(function($routeProvider, $locationProvider, $translateProvider){
     $translateProvider.translations('en', {
         HOME: 'Home',
         OUR_MISSION: 'Our mission',
-        BEING_SPECIAL: 'Being Specila',
+        BEING_SPECIAL: 'Being Special',
         PSYCHOTHERAPY: "Psychotherapy",
         ABOUT_ME: 'About me',
         BOOK_A_SESSION: "Book a Session"
