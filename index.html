@@ -2,77 +2,37 @@
 <html>
 <head>
     <title>Perry's Psychotherapy</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
-    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="lib/angular-translate.js"></script>
+
+
     <script src="js/route.js"></script>
+
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-        font-family: Arial;
-        font-size: 17px;
-    }
-
-    #myVideo {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%; 
-        min-height: 100%;
-    }
-
-    .content {
-        position: fixed;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        color: #f1f1f1;
-        width: 100%;
-        padding: 20px;
-    }
-
-    #myBtn {
-        width: 200px;
-        font-size: 18px;
-        padding: 10px;
-        border: none;
-        background: #000;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    #myBtn:hover {
-        background: #ddd;
-        color: black;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/perry.css">
 </head>
 
 <body ng-app="myApp">
 
     <div class="w3-top">
         <div class="w3-bar w3-white w3-card">
-            <a href="#!/" class="w3-bar-item w3-button w3-padding-large" style="margin-left:15%">Home</a>
-            <a href="#!/main" class="w3-bar-item w3-button w3-padding-large">Our Mission</a>
-            <a href="#!/menu" class="w3-bar-item w3-button w3-padding-large">Being Special</a>
-            <a href="#!/about" class="w3-bar-item w3-button w3-padding-large">Psychotherapy</a>
-            <a href="#!/about" class="w3-bar-item w3-button w3-padding-large">About Me</a>
-            <a href="#!/about" class="w3-bar-item w3-button w3-padding-large">Book a Session</a>
+            <a href="#!/" class="w3-bar-item w3-button w3-padding-large" style="margin-left:15%">{{'HOME' | translate }}</a>
+            <a href="#!/main" class="w3-bar-item w3-button w3-padding-large">{{'OUR_MISSION' | translate }}</a>
+            <a href="#!/menu" class="w3-bar-item w3-button w3-padding-large">{{'BEING_SPECIAL' | translate }}</a>
+            <a href="#!/about" class="w3-bar-item w3-button w3-padding-large">{{'PSYCHOTHERAPY' | translate }}</a>
+            <a href="#!/about" class="w3-bar-item w3-button w3-padding-large">{{'ABOUT_ME' | translate }}</a>
+            <a href="#!/about" class="w3-bar-item w3-button w3-padding-large">{{'BOOK_A_SESSION' | translate }}</a>
             <div class="w3-dropdown-hover w3-hide-small"  style="float:right;">
                 <button class="w3-padding-large w3-button" title="More">Language <i class="fa fa-caret-down"></i></button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="#" class="w3-bar-item w3-button">English</a>
-                    <a href="#" class="w3-bar-item w3-button">繁體中文</a>
-                    <a href="#" class="w3-bar-item w3-button">简体中文</a>
-                    <a href="#" class="w3-bar-item w3-button">日本語</a>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4" ng-controller="TranslateController">
+                    <a href="#" class="w3-bar-item w3-button" ng-click="changeLanguage('en')">English</a>
+                    <a href="#" class="w3-bar-item w3-button" ng-click="changeLanguage('cht')">繁體中文</a>
+                    <a href="#" class="w3-bar-item w3-button" ng-click="changeLanguage('chs')">简体中文</a>
+                    <a href="#" class="w3-bar-item w3-button" ng-click="changeLanguage('jp')">日本語</a>
                 </div>
             </div>
         </div>
@@ -80,31 +40,8 @@
 
 
 
-    <video autoplay muted loop id="myVideo">
-        <source src="video/mist.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
 
-    <div class="content">
-        <h1>Heading</h1>
-        <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
-        <button id="myBtn" onclick="myFunction()">Pause</button>
-    </div>
 
-    <script>
-        var video = document.getElementById("myVideo");
-        var btn = document.getElementById("myBtn");
-
-        function myFunction() {
-            if (video.paused) {
-                video.play();
-                btn.innerHTML = "Pause";
-            } else {
-                video.pause();
-                btn.innerHTML = "Play";
-            }
-        }
-    </script>
 
     <div ng-view style="margin-top:46px"></div>
 
