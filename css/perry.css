@@ -23,15 +23,29 @@
         text-align: center;
     }
 
-    .fadeImage {
+    .fadeIn4s {
         -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
            -moz-animation: fadein 4s; /* Firefox < 16 */
             -ms-animation: fadein 4s; /* Internet Explorer */
              -o-animation: fadein 4s; /* Opera < 12.1 */
                 animation: fadein 4s;
         display: block;
-        margin: 25px auto;
     }
+
+    .fadeIn4sd4 {
+
+        -webkit-animation: hide 4s, fadein 4s 4s;  /* Safari, Chrome and Opera > 12.1 */
+           -moz-animation: hide 4s, fadein 4s 4s;  /* Firefox < 16 */
+            -ms-animation: hide 4s, fadein 4s 4s;  /* Internet Explorer */
+             -o-animation: hide 4s, fadein 4s 4s;  /* Opera < 12.1 */
+                animation: hide 4s, fadein 4s 4s;  
+        display: block;
+    }
+
+	@keyframes hide {
+        from { opacity: 0; }
+        to   { opacity: 0; }
+	}
 
     @keyframes fadein {
         from { opacity: 0; }
