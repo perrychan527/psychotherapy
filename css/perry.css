@@ -23,7 +23,7 @@
         text-align: center;
     }
 
-    .fadeIn4s {
+    .fadeIn1 {
         -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
            -moz-animation: fadein 4s; /* Firefox < 16 */
             -ms-animation: fadein 4s; /* Internet Explorer */
@@ -32,7 +32,7 @@
         display: block;
     }
 
-    .fadeIn4sd4 {
+    .fadeIn2 {
 
         -webkit-animation: hide 4s, fadein 4s 4s;  /* Safari, Chrome and Opera > 12.1 */
            -moz-animation: hide 4s, fadein 4s 4s;  /* Firefox < 16 */
