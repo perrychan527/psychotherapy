@@ -34,11 +34,11 @@
 
     .fadeIn2 {
 
-        -webkit-animation: hide 1s, fadein 2s 1s;  /* Safari, Chrome and Opera > 12.1 */
-           -moz-animation: hide 1s, fadein 2s 1s;  /* Firefox < 16 */
-            -ms-animation: hide 1s, fadein 2s 1s;  /* Internet Explorer */
-             -o-animation: hide 1s, fadein 2s 1s;  /* Opera < 12.1 */
-                animation: hide 1s, fadein 2s 1s;  
+        -webkit-animation: hide 1.5s, fadein 3s 1.5s;  /* Safari, Chrome and Opera > 12.1 */
+           -moz-animation: hide 1.5s, fadein 3s 1.5s;  /* Firefox < 16 */
+            -ms-animation: hide 1.5s, fadein 3s 1.5s;  /* Internet Explorer */
+             -o-animation: hide 1.5s, fadein 3s 1.5s;  /* Opera < 12.1 */
+                animation: hide 1.5s, fadein 3s 1.5s;  
         display: block;
     }
 
