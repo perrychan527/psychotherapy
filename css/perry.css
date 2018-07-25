@@ -24,21 +24,21 @@
     }
 
     .fadeIn1 {
-        -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-           -moz-animation: fadein 4s; /* Firefox < 16 */
-            -ms-animation: fadein 4s; /* Internet Explorer */
-             -o-animation: fadein 4s; /* Opera < 12.1 */
-                animation: fadein 4s;
+        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+           -moz-animation: fadein 3s; /* Firefox < 16 */
+            -ms-animation: fadein 3s; /* Internet Explorer */
+             -o-animation: fadein 3s; /* Opera < 12.1 */
+                animation: fadein 3s;
         display: block;
     }
 
     .fadeIn2 {
 
-        -webkit-animation: hide 4s, fadein 4s 4s;  /* Safari, Chrome and Opera > 12.1 */
-           -moz-animation: hide 4s, fadein 4s 4s;  /* Firefox < 16 */
-            -ms-animation: hide 4s, fadein 4s 4s;  /* Internet Explorer */
-             -o-animation: hide 4s, fadein 4s 4s;  /* Opera < 12.1 */
-                animation: hide 4s, fadein 4s 4s;  
+        -webkit-animation: hide 1s, fadein 2s 1s;  /* Safari, Chrome and Opera > 12.1 */
+           -moz-animation: hide 1s, fadein 2s 1s;  /* Firefox < 16 */
+            -ms-animation: hide 1s, fadein 2s 1s;  /* Internet Explorer */
+             -o-animation: hide 1s, fadein 2s 1s;  /* Opera < 12.1 */
+                animation: hide 1s, fadein 2s 1s;  
         display: block;
     }
 
