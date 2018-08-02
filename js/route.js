@@ -84,43 +84,31 @@ app.controller('HomePage', function($scope,$anchorScroll) {
 	}
 
 	function scrollTo(eID) {
-			var startY = currentYPosition();
-			var stopY = elmYPosition(eID);
 
-			var distance = stopY > startY ? stopY - startY : startY - stopY;
-			if (distance < 100) {
-				scrollTo(0, stopY);
 
-				return;
-			}
-
-			step = 0.5;
-			var leapY = stopY > startY ? startY + step : startY - step;
-			console.log(leapY);
-			console.log(startY);
-			console.log(stopY);
-			if (stopY > startY) {
-				for ( var i=startY; i<stopY; i+=step ) {
-					setTimeout("window.scrollTo(0, " + leapY + ")", 1);
-					leapY += step;
-					if (leapY > stopY){
-						leapY = stopY;
-					}
-				}
-
-				return;
-			} else {
-				for ( var i=startY; i>stopY; i-=step ) {
-					setTimeout("window.scrollTo(0, " + leapY + ")", 1);
-					leapY -= step;
-					if (leapY < stopY){
-						leapY = stopY;
-					}
-				}
-			}
-
+        
+        var startY = currentYPosition();
+        var stopY = elmYPosition(eID);
+        var distance = stopY > startY ? stopY - startY : startY - stopY;
+        if (distance < 100) {
+            scrollTo(0, stopY); return;
+        }
+        var speed = Math.round(distance / 100);
+        if (speed >= 16) speed = 16;
+        var step = Math.round(distance / 100);
+        var leapY = stopY > startY ? startY + step : startY - step;
+        var timer = 0;
+        if (stopY > startY) {
+            for ( var i=startY; i<stopY; i+=step ) {
+                setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+                leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+            } return;
+        }
+        for ( var i=startY; i>stopY; i-=step ) {
+            setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+            leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
 		}
-
+	}
 
 	$scope.goToID = function (id) {
 		scrollTo("" + id);
