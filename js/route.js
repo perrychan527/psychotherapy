@@ -94,26 +94,31 @@ app.controller('HomePage', function($scope,$anchorScroll) {
 				return;
 			}
 
-			var speed = Math.round(distance / 100);
-			if (speed >= 20){
-				speed = 20;
-			}
-
-			var step = Math.round(distance / 100);
+			step = 0.5;
 			var leapY = stopY > startY ? startY + step : startY - step;
-			var timer = 0;
+			console.log(leapY);
+			console.log(startY);
+			console.log(stopY);
 			if (stopY > startY) {
 				for ( var i=startY; i<stopY; i+=step ) {
-					setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
-					leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+					setTimeout("window.scrollTo(0, " + leapY + ")", 1);
+					leapY += step;
+					if (leapY > stopY){
+						leapY = stopY;
+					}
 				}
 
 				return;
+			} else {
+				for ( var i=startY; i>stopY; i-=step ) {
+					setTimeout("window.scrollTo(0, " + leapY + ")", 1);
+					leapY -= step;
+					if (leapY < stopY){
+						leapY = stopY;
+					}
+				}
 			}
-			for ( var i=startY; i>stopY; i-=step ) {
-				setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
-				leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
-			}
+
 		}
 
 
