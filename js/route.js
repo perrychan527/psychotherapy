@@ -16,6 +16,9 @@ app.config(function($routeProvider, $locationProvider, $translateProvider){
     .when("/about", {
         templateUrl : "html/about.html"
     })
+    .when("/book_a_session", {
+        templateUrl : "html/book_a_session.html"
+    })
 
     $translateProvider.translations('en', {
         HOME: 'Home',
