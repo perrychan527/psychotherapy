@@ -84,9 +84,6 @@ app.controller('HomePage', function($scope,$anchorScroll) {
 	}
 
 	function scrollTo(eID) {
-
-
-        
         var startY = currentYPosition();
         var stopY = elmYPosition(eID);
         var distance = stopY > startY ? stopY - startY : startY - stopY;
