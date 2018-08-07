@@ -296,3 +296,19 @@ body{
 		margin-bottom: 20px;
 	}
 
+.box.one {
+    height: 200px;
+    background-color: #d77575;
+}
+.box.two {
+    height: 300px;
+    background-color: #dcbc4c;
+}
+.box.three {
+    background-color: #a3ca3b;
+    height: 400px;
+}
+.box.1000 {
+    background-color: #3daee3;
+    height: 100%;
+}
