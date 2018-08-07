@@ -271,13 +271,13 @@ body{
 	.rows {
 		-moz-column-count:2;
 		-moz-column-gap: 3%;
-		-moz-column-width: 30%;
+		-moz-column-width: 45%;
 		-webkit-column-count:3;
 		-webkit-column-gap: 3%;
-		-webkit-column-width: 30%;
+		-webkit-column-width: 45%;
 		column-count: 2;
 		column-gap: 3%;
-		column-width: 30%;
+		column-width: 45%;
 		margin: 10px;
 	}
 
