@@ -25,11 +25,14 @@
 
     .perry-center {
         text-align: center;
+    }
+	
+    .font-1 {
 		font: 50px/30px Times, Times New Roman, serif;
 		font-variant: small-caps;
 		font-weight: 100;
-    }
-
+	}
+	
     .fadeIn1 {
         -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
            -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -231,6 +234,6 @@
 	}
 
 	.tabel-line{
-		padding-right: 0px;
-		padding-left: 0px;
+		padding-right: 50px;
+		padding-left: 50px;
 	}
