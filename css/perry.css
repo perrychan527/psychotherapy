@@ -95,11 +95,16 @@
 	}
 
 	.container{
-
 		padding-left:1rem;
 		padding-right:1rem;
 		margin:auto;
 		text-align:center;
+	}
+	@media(max-width:960px){
+		.container{
+			padding-right:3rem;
+			padding-left:3rem;
+		}
 	}
 
 	.fullscreen-video-wrap{
@@ -140,12 +145,7 @@
 		color:#fff;
 	}
 
-	@media(max-width:960px){
-		.container{
-			padding-right:3rem;
-			padding-left:3rem;
-		}
-	}
+
 
 	.scroll-down-button a {
 		position: absolute;
