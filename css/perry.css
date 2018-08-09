@@ -33,6 +33,10 @@
 		font-weight: 100;
 	}
 	
+	.font-2 {
+		font-size: 25px;
+	}
+	
     .fadeIn1 {
         -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
            -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -234,6 +238,6 @@
 	}
 
 	.tabel-line{
-		padding-right: 50px;
-		padding-left: 50px;
+		padding-right: 90px;
+		padding-left: 90px;
 	}
