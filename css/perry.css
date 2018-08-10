@@ -37,6 +37,16 @@
 		font-size: 25px;
 	}
 	
+	.font-name {
+		font-family: Great Vibes;
+		font-size: 40px;
+	}
+	
+	.font-quote {
+		font-size: 40px;
+		font-style: italic;
+	}	
+	
     .fadeIn1 {
         -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
            -moz-animation: fadein 3s; /* Firefox < 16 */
