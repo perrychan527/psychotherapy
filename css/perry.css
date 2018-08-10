@@ -28,23 +28,23 @@
     }
 	
     .font-1 {
-		font: 60px/40px Times, Times New Roman, serif;
+		font: 60px/40px Georgia, Times New Roman, serif;
 		font-variant: small-caps;
 		font-weight: 100;
 	}
 	
 	.font-2 {
-		font-size: 25px;
+		font: 28px Georgia, Times New Roman,serif;
 	}
 	
 	.font-name {
-		font-family: Great Vibes;
-		font-size: 40px;
+		font: 40px Brush Script MT, Brush Script Std, cursive;
 	}
 	
 	.font-quote {
 		font-size: 40px;
 		font-style: italic;
+		font-family: Georgia, Times New Roman, serif;
 	}	
 	
     .fadeIn1 {
