@@ -247,7 +247,17 @@
 		}
 	}
 
-	.tabel-line{
-		padding-right: 90px;
-		padding-left: 90px;
+	.table-line-left{
+		padding-left: 5%;
+		padding-right: 2.5%;
+	}
+
+	.table-line-right{
+		padding-left: 2.5%;
+		padding-right: 5%;
+	}
+
+	.table-line-center{
+		padding-left: 5%;
+		padding-right: 5%;
 	}
