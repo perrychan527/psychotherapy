@@ -48,6 +48,11 @@
 		font-family: Georgia, Times New Roman, serif;
 	}	
 	
+	.pic-desc {
+		padding-top: 3%;
+		text-align: left;
+	}
+	
     .fadeIn1 {
         -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
            -moz-animation: fadein 3s; /* Firefox < 16 */
