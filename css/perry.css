@@ -28,21 +28,22 @@
     }
 	
     .font-1 {
-		font: 6vw/4vw Georgia, Times New Roman, serif;
+		font: 4vw/2vw Georgia, Times New Roman, serif;
 		font-variant: small-caps;
 		font-weight: 100;
 	}
 	
 	.font-2 {
-		font: 28px Georgia, Times New Roman,serif;
+		font: 1.5vw Georgia, Times New Roman,serif;
 	}
 	
 	.font-name {
-		font: 40px Brush Script MT, Brush Script Std, cursive;
+		font: 1vw Georgia, Times New Roman,serif;
+		font-style: italic;
 	}
 	
 	.font-quote {
-		font-size: 35px;
+		font-size: 1.5vw;
 		font-style: italic;
 		font-family: Georgia, Times New Roman, serif;
 	}	
