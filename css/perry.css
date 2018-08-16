@@ -38,12 +38,13 @@
 	}
 	
 	.font-name {
-		font: 1vw Georgia, Times New Roman,serif;
+		font: 1.3vw Georgia, Times New Roman,serif;
 		font-style: italic;
+		padding-top: 3%;
 	}
 	
 	.font-quote {
-		font-size: 1.5vw;
+		font-size: 1.7vw;
 		font-style: italic;
 		font-family: Georgia, Times New Roman, serif;
 	}	
@@ -51,6 +52,7 @@
 	.pic-desc {
 		padding-top: 3%;
 		text-align: left;
+		margin-right: 40%;
 	}
 	
     .fadeIn1 {
@@ -255,15 +257,15 @@
 
 	.table-line-left{
 		padding-left: 5%;
-		padding-right: 2.5%;
+		padding-right: 3.5%;
 	}
 
 	.table-line-right{
-		padding-left: 2.5%;
+		padding-left: 3.5%;
 		padding-right: 5%;
 	}
 
 	.table-line-center{
-		padding-left: 5%;
-		padding-right: 5%;
+		padding-left: 30%;
+		padding-right: 30%;
 	}
