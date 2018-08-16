@@ -16,40 +16,44 @@ app.config(function($routeProvider, $locationProvider, $translateProvider){
     .when("/about", {
         templateUrl : "html/about.html"
     })
+    .when("/services", {
+        templateUrl : "html/services.html"
+    })
     .when("/book_a_session", {
         templateUrl : "html/book_a_session.html"
     })
 
     $translateProvider.translations('en', {
         HOME: 'Home',
-        OUR_MISSION: 'Our mission',
+        ABOUT: 'About',
+        SERVICES: 'Services',
         BEING_SPECIAL: 'Being Special',
         PSYCHOTHERAPY: "Psychotherapy",
-        ABOUT_ME: 'About me',
         BOOK_A_SESSION: "Book a Session"
     })
     .translations('cht', {
         HOME: '首頁',
-        OUR_MISSION: '我的任務',
+        ABOUT: '關於我',
+        SERVICES: '服務',
         BEING_SPECIAL: '變得特別',
         PSYCHOTHERAPY: "心理療法",
-        ABOUT_ME: '關於我',
+
         BOOK_A_SESSION: "想見你"
     })
     .translations('chs', {
         HOME: '首页',
-        OUR_MISSION: '我的任务',
+        ABOUT: '關於我',
+        SERVICES: '服務(簡體)',
         BEING_SPECIAL: '变得特别',
         PSYCHOTHERAPY: "心理療法",
-        ABOUT_ME: '關於我',
         BOOK_A_SESSION: "想見你"
     })
     .translations('jp', {
         HOME: 'ホームページ',
-        OUR_MISSION: 'ミッション',
+        ABOUT: '私について',
+        SERVICES: '服務(日文)',
         BEING_SPECIAL: 'スペシャル',
         PSYCHOTHERAPY: "わからない",
-        ABOUT_ME: '私について',
         BOOK_A_SESSION: "君に会いたい"
     });
 
