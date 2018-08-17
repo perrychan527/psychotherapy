@@ -8,6 +8,30 @@
         font-size: 17px;
     }
 
+
+	a:link {
+		color: black;
+		text-decoration: none;
+	}
+
+	/* visited link */
+	a:visited {
+		color: black;
+		text-decoration: none;
+	}
+
+	/* mouse over link */
+	a:hover {
+		color: black;
+		text-decoration: none;
+	}
+
+	/* selected link */
+	a:active {
+		color: black;
+		text-decoration: none;
+	}
+
     .fit-img {
 		max-width: 100%;
 		max-height: 100%;
@@ -305,4 +329,15 @@
 		color: white;
 		font-size: 1.5vw;
 		padding: 1.5vh 1.5vw;
+		border-radius: 2px;
 	}
+		.hover-box-text-circle {
+		border-style: solid;
+		border-width: 0.1vw;
+		color: white;
+		font-size: 1.5vw;
+		padding: 4.7vh 1.5vw;
+		border-radius: 50%;
+	}
+
+	
