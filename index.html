@@ -13,7 +13,7 @@
 <!---
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 --->
@@ -21,7 +21,7 @@
 
 		<link rel="stylesheet" type="text/css" href="css/bar/mdb.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bar/bootstrap.min.css">
-
+		<link rel="stylesheet" type="text/css" href="css/bar/w3.css">
 
 		<link rel="stylesheet" type="text/css" href="css/perry.css">
 
@@ -54,19 +54,25 @@
 
 		<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
 			<a class="navbar-brand" style="color: black;" href="#"><strong>AA</strong></a>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" style="color: black;" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" style="color: black;" href="#">Link</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" style="color: black;" href="#">Profile</a>
-					</li>
-				</ul>
+
+			<div class="w3-bar bar-text">
+				<a href="#!/" class="w3-bar-item w3-button w3-padding-large">{{'HOME' | translate }}</a>
+				<a href="#!/about" class="w3-bar-item w3-button w3-padding-large">{{'ABOUT' | translate }}</a>
+				<a href="#!/services" class="w3-bar-item w3-button w3-padding-large">{{'SERVICES' | translate }}</a>
+				<a href="#!/menu" class="w3-bar-item w3-button w3-padding-large">{{'BEING_SPECIAL' | translate }}</a>
+				<a href="#!/about" class="w3-bar-item w3-button w3-padding-large">{{'ABOUT' | translate }}</a>
+				<a href="#!/book_a_session" class="w3-bar-item w3-button w3-padding-large">{{'BOOK_A_SESSION' | translate }}</a>
+				<div class="w3-dropdown-hover w3-hide-small"  style="float:right;">
+					<button class="w3-padding-large w3-button" title="More">Language <i class="fa fa-caret-down"></i></button>
+					<div class="w3-dropdown-content w3-bar-block w3-card-4" ng-controller="TranslateController">
+						<a href="#" class="w3-bar-item w3-button" ng-click="changeLanguage('en')">English</a>
+						<a href="#" class="w3-bar-item w3-button" ng-click="changeLanguage('cht')">繁體中文</a>
+						<a href="#" class="w3-bar-item w3-button" ng-click="changeLanguage('chs')">简体中文</a>
+						<a href="#" class="w3-bar-item w3-button" ng-click="changeLanguage('jp')">日本語</a>
+					</div>
+				</div>
 			</div>
+
 		</nav>
 
 
