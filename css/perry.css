@@ -190,7 +190,7 @@
 		-webkit-transform: translate(0, -50%);
 		transform: translate(0, -50%);
 		color: #fff;
-		font : normal 400 11px/1 "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+		font : normal 400 13px/1 "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 		letter-spacing: .1em;
 		text-decoration: none;
 		transition: opacity .3s;
@@ -310,6 +310,8 @@
 
 	.bar-text {
 		Font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+		font-variant: small-caps;
+		font-size: 0.95vw;
 	}
 
 	.hover-box-text {
